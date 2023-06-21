@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url(images/3080769.webp) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+nav {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0;
+  font-family: "Shadows Into Light", cursive;
+  font-size: xx-large;
+  color: whitesmoke;
+}
+main {
+  position: relative;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main article {
+  width: calc(100% / 4 - 5px);
+  border-radius: 15px;
+  border-spacing: 5px;
+  padding: 5px 5px 5px 25px;
+  overflow: hidden;
+  background: rgb(179, 179, 179, 0.2);
+  color: whitesmoke;
+}
+main article img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+}
+main article audio {
+  width: 100%;
+}
+
+/*Loader*/
+#loader {
+  border-top: 16px solid #6172C5;
+  border-right: 16px solid #ED2EA5; 
+  border-bottom: 16px solid #FA8057;
+  border-left: 16px solid #FAD009;
+  border-radius: 200%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto; 
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*Error*/
+#errorContainer {
+  display: none;
+  color: #ED2EA5;
+  font-weight: bold;
+  font-family: "Shadows Into Light", cursive;
+  font-size: xx-large;
+  text-align: center;
+}
